@@ -1,0 +1,674 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+
+    <!-- Site Title -->
+    <title>Gerold - Personal Portfolio HTML5 Template</title>
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="{% static 'img/favicon.png' %}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}" />
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome-pro.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon_gerold.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'css/backToTop.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/odometer-theme-default.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+</head>
+
+<body>
+
+    <!-- Preloader Area Start -->
+     <div class="preloader">
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+            <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+        </svg>
+
+        <div class="preloader-heading">
+            <div class="load-text">
+                <span>З</span>
+                <span>А</span>
+                <span>Г</span>
+                <span>Р</span>
+                <span>У</span>
+                <span>З</span>
+                <span>К</span>
+                <span>А</span>
+            </div>
+        </div>
+    </div> 
+    <!-- Preloader Area End -->
+
+
+    <!-- start: Back To Top -->
+    <div class="progress-wrap" id="scrollUp">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- end: Back To Top -->
+
+    <!-- HEADER START -->
+    <header class="tj-header-area header-absolute">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap align-items-center">
+
+                    <div class="logo-box">
+                        <a href="index.html">
+                            <img src="{% static 'img/logo/logo.png' %}" alt="">
+                        </a>
+                    </div>
+
+                    <div class="header-info-list d-none d-md-inline-block">
+                        <ul class="ul-reset">
+                            <li><a href="mailto:{{infouser.email}}">{{infouser.email}}</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="header-menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#services-section">Услуги</a></li>
+                                <li><a href="#works-section">Проекты</a></li>
+                                <li><a href="#resume-section">Резюме</a></li>
+                                <li><a href="#skills-section">Навыки</a></li>
+                                <li><a href="#testimonials-section">Отзывы</a></li>
+                                <li><a href="#contact-section">Контакт</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="header-button">
+                        <a href="#" class="btn tj-btn-primary">Содрудничать!</a>
+                    </div>
+
+                    <div class="menu-bar d-lg-none">
+                        <button>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="tj-header-area header-2 header-sticky sticky-out">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap align-items-center">
+
+                    <div class="logo-box">
+                        <a href="index.html">
+                            <img src="{% static 'img/logo/logo.png' %}" alt="">
+                        </a>
+                    </div>
+
+                    <div class="header-info-list d-none d-md-inline-block">
+                        <ul class="ul-reset">
+                            <li><a href="mailto:{{infouser.email}}">{{infouser.email}}</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="header-menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#services-section">Услуги</a></li>
+                                <li><a href="#works-section">Проекты</a></li>
+                                <li><a href="#resume-section">Резюме</a></li>
+                                <li><a href="#skills-section">Навыки</a></li>
+                                <li><a href="#testimonials-section">Отзывы</a></li>
+                                <li><a href="#contact-section">Контакт</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <ul class="header-button">
+                        <li><a href="contact-section" class="btn tj-btn-primary">Сотрудничать!</a></li>
+                    </ul>
+                    
+
+                    <div class="menu-bar d-lg-none">
+                        <button>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <main class="site-content" id="content">
+        <!-- HERO SECTION START -->
+        <section class="hero-section d-flex align-items-center" id="intro">
+            <div class="intro_text">
+                <svg viewBox="0 0 1320 300">
+                    <text x="50%" Y="50%" text-anchor="middle">
+                        HI
+                    </text>
+                </svg>
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="hero-content-box">
+                            <span class="hero-sub-title">{{infouser.name}}</span>
+                            <h1 class="hero-title">{{infouser.work}}
+                            </h1>
+
+                            <div class="hero-img-box d-md-none text-center">
+                                <img src="{% static 'img/hero/me.png' %}" alt="">
+                            </div>
+
+                            <p class="lead">{{infouser.skills}}</p>
+                            <div class="button-box d-flex flex-wrap align-items-center">
+                                <a href="#" class="btn tj-btn-secondary">Download
+                                    CV</a>
+                                <ul class="ul-reset social-icons">
+                                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fa-light fa-basketball"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="https://github.com/Karimzhanov"><i class="fa-brands fa-github"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-none d-md-block">
+                        <div class="hero-image-box text-center">
+                            <img src="{{infouser.image.url}}" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="funfact-area">
+                    <div class="row">
+                        <div class="col-6 col-lg-3">
+                            <div class="funfact-item d-flex flex-column flex-sm-row flex-wrap align-items-center">
+                                <div class="number"><span class="odometer" data-count="{{secondary.yearsexper}}"></span></div>
+                                <div class="text">Годы <br>Опыта</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="funfact-item d-flex flex-column flex-sm-row flex-wrap align-items-center">
+                                <div class="number"><span class="odometer" data-count="{{secondary.projectfinish}}">0</span>+</div>
+                                <div class="text">Проекты <br>Завершенный</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="funfact-item d-flex flex-column flex-sm-row flex-wrap align-items-center">
+                                <div class="number"><span class="odometer" data-count="{{secondary.happyclients}}">0</span>K</div>
+                                <div class="text">Счастливые <br>Клиенты</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="funfact-item d-flex flex-column flex-sm-row flex-wrap align-items-center">
+                                <div class="number"><span class="odometer" data-count="{{secondary.yearsexper}}">0</span></div>
+                                <div class="text">Годы <br>Опыта</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- HERO SECTION END -->
+
+        <!-- SERVICES SECTION START -->
+        <section class="services-section" id="services-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header text-center">
+                            <h2 class="section-title wow fadeInUp" data-wow-delay=".3s">Мои качественные услуги</h2>
+                            <p class=" wow fadeInUp" data-wow-delay=".4s">Мы воплотим ваши идеи и, следовательно, 
+                                ваши пожелания в виде уникального веб-проекта, 
+                                который вдохновляет вас и ваших клиентов.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="services-widget position-relative">
+                            {% for myservice in myservice %}
+                            <div class="service-item current d-flex flex-wrap align-items-center wow fadeInUp"
+                                data-wow-delay=".5s">
+                                <div class="left-box d-flex flex-wrap align-items-center">
+                                    <span class="number">{{myservice.number_service}}</span>
+                                    <h3 class="service-title">{{myservice.type_job}}</h3>
+                                </div>
+                                <div class="right-box">
+                                    <p>{{myservice.aboutproj}}</p>
+                                </div>
+                                <i class="flaticon-up-right-arrow"></i>
+                                <button data-mfp-src="#service-wrapper" class="service-link modal-popup"></button>
+                            </div>
+                            {% endfor %}
+                            <div class="active-bg wow fadeInUp" data-wow-delay=".5s"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SERVICES SECTION END -->
+
+        <!-- PORTFOLIO SECTION START -->
+        <section class="portfolio-section" id="works-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header text-center">
+                            <h2 class="section-title wow fadeInUp" data-wow-delay=".3s">Мои последние работы</h2>
+                            <p class=" wow fadeInUp" data-wow-delay=".4s">Мы воплотим ваши идеи и, следовательно, 
+                                ваши пожелания в виде уникального веб-проекта, 
+                                который вдохновляет вас и ваших клиентов.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">        
+                    <div class="col-md-12">
+                        <div class="portfolio-filter text-center wow fadeInUp" data-wow-delay=".5s">
+                            <div class="button-group filter-button-group">
+                                {% for proj in projects%}
+                                <button data-filter="*" class="active">{{proj.type_job}}</button>
+                                {% endfor %}
+                                <div class="active-bg"></div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-box wow fadeInUp" data-wow-delay=".6s">
+                            <div class="portfolio-sizer"></div>
+                            <div class="gutter-sizer"></div>
+                            {% for projects in projects %}
+                            <div class="portfolio-item branding">
+                                <div class="image-box">
+                                    <img src="{{projects.image.url}}" alt="">
+                                </div>
+                                <div class="content-box">
+                                    <h3 class="portfolio-title">{{projects.name}}</h3>
+                                    <p>{{projects.description}}</p>
+                                    <i class="flaticon-up-right-arrow"></i>
+                                    <button data-mfp-src="#portfolio-wrapper"
+                                        class="portfolio-link modal-popup"></button>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        
+
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- PORTFOLIO SECTION END -->
+
+
+
+        <!-- RESUME SECTION START -->
+        <section class="resume-section" id="resume-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="section-header wow fadeInUp" data-wow-delay=".3s">
+                            <h2 class="section-title">Мой опыт</h2>
+                        </div>
+
+                        <div class="resume-widget">
+                            {% for skills in skills%}
+                            <div class="resume-item wow fadeInLeft" data-wow-delay=".4s">
+                                <div class="time">
+                                    {{skills.time}}
+                                </div>
+                                <h3 class="resume-title">{{skills.typedevelop}}</h3>
+                                <div class="institute">
+                                    {{skills.location}}
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="section-header wow fadeInUp" data-wow-delay=".4s">
+                            <h2 class="section-title">Мое образование</h2>
+                        </div>
+
+                        <div class="resume-widget">
+                            {% for education in education%}
+                            <div class="resume-item wow fadeInRight" data-wow-delay=".5s">
+                                <div class="time">
+                                    {{education.when_course}}
+                                </div>
+                                <h3 class="resume-title">{{education.course_name}}</h3>
+                                <div class="institute">
+                                    {{education.where_study}}
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- RESUME SECTION END -->
+
+        <!-- SKILLS SECTION START -->
+        <section class="skills-section" id="skills-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header text-center">
+                            <h2 class="section-title wow fadeInUp" data-wow-delay=".3s">Мои навыки</h2>
+                            <p class=" wow fadeInUp" data-wow-delay=".4s">Мы воплотим ваши идеи и, следовательно, 
+                                ваши пожелания в виде уникального веб-проекта, 
+                                который вдохновляет вас и ваших клиентов.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="skills-widget d-flex flex-wrap justify-content-center align-items-center">
+                            {% for persent in persent%}
+                            <div class="skill-item wow fadeInUp" data-wow-delay=".3s">
+                                <div class="skill-inner">
+                                    <div class="icon-box">
+                                        <img src="{{persent.logo.url}}" alt="">
+                                    </div>
+                                    <div class="number">{{persent.persent}}%</div>
+                                </div>
+                                <p>{{persent.name_thing}}</p>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SKILLS SECTION END -->
+
+        <!-- TESTIMONIAL SECTION START -->
+        <section class="testimonial-section" id="testimonials-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="section-header">
+                            <h2 class="section-title wow fadeInLeft" data-wow-delay=".3s">Мои любимые <br> коллеги!</h2>
+                            <p class=" wow fadeInLeft" data-wow-delay=".4s">Расширение возможностей людей в новом
+                                цифровом путешествии с помощью моих суперуслуг</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-xl-6 offset-xl-1">
+                        <div class="testimonials-widget wow fadeInRight" data-wow-delay=".5s">
+                            <div class="owl-carousel testimonial-carousel">
+                                {% for colleagues in colleagues%}
+                                <div class="testimonial-item">
+                                    <div class="top-area d-flex flex-wrap justify-content-between">
+                                        <div class="logo-box">
+                                            <p>{{colleagues.company}}</p>
+                                        </div>
+                                        <div class="image-box">
+                                            <img src="{{colleagues.photo.url}}" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="icon-box">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.105431 2.18998C0.0301532 0.988687 1.02531 -0.00647222 2.2266 0.0688056L19.4961 1.15097C21.2148 1.25867 22.0029 3.34358 20.7852 4.56127L4.5979 20.7486C3.3802 21.9663 1.2953 21.1781 1.1876 19.4594L0.105431 2.18998Z"
+                                                fill="url(#paint0_linear_263_588)" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_263_588" x1="-0.0363755"
+                                                    y1="-0.0729998" x2="35.3333" y2="-0.0729991"
+                                                    gradientUnits="userSpaceOnUse">
+                                                    <stop offset="1" stop-color="var(--tj-theme-primary)" />
+                                                    <stop offset="1" stop-color="#140C1C" stop-opacity="0" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.105431 2.18998C0.0301532 0.988687 1.02531 -0.00647222 2.2266 0.0688056L19.4961 1.15097C21.2148 1.25867 22.0029 3.34358 20.7852 4.56127L4.5979 20.7486C3.3802 21.9663 1.2953 21.1781 1.1876 19.4594L0.105431 2.18998Z"
+                                                fill="url(#paint0_linear_263_589)" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_263_589" x1="-0.0363755"
+                                                    y1="-0.0729998" x2="35.3333" y2="-0.0729991"
+                                                    gradientUnits="userSpaceOnUse">
+                                                    <stop offset="1" stop-color="var(--tj-theme-primary)" />
+                                                    <stop offset="1" stop-color="#140C1C" stop-opacity="0" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <p class="quote">{{colleagues.description}}</p>
+                                    <h4 class="name">{{colleagues.full_name}}</h4>
+                                    <span class="designation">{{colleagues.degree}}</span>
+                                </div>
+                                {% endfor%}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- TESTIMONIAL SECTION END -->
+
+        <!-- BLOG SECTION STAR -->
+        <section class="blog-section" id="blog-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header text-center">
+                            <h2 class="section-title wow fadeInUp" data-wow-delay=".3s">Недавние блоги</h2>
+                            <p class=" wow fadeInUp" data-wow-delay=".4s">Мы воплотим ваши идеи и, следовательно, ваши пожелания в 
+                                виде уникального веб-проекта, который 
+                                вдохновляет вас и ваших клиентов.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    {% for blogs in blogs %}
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-item wow fadeInUp" data-wow-delay=".5s">
+                            <div class="blog-thumb">
+                                <a href="{% url 'blog_details' blogs.id %}">
+                                    <img src="{{blogs.image.url}}" alt="">
+                                </a>
+                            </div>
+
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <ul class="ul-reset">
+                                        <li><i class="fa-light fa-calendar-days"></i>{{blogs.created_at}}</li>
+                                    </ul>
+                                </div>
+                                <h3 class="blog-title"><a href="{% url 'blog_details' blogs.id %}">{{blogs.name_blog}}</a></h3>
+                                <p>{{ blogs.description|truncatewords:3 }}</p>  
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor%}
+                </div>
+            </div>
+        </section>
+        <!-- BLOG SECTION END -->
+
+        <!-- CONTACT SECTION START -->
+        <section class="contact-section" id="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7 order-2 order-md-1">
+                        <div class="contact-form-box wow fadeInLeft" data-wow-delay=".3s">
+                            <div class="section-header">
+                                <h2 class="section-title">Давайте работать вместе!</h2>
+                                <p>Я проектирую и кодирую красивые простые вещи, и мне 
+                                    нравится то, что я делаю. Просто вот так!
+                                </p>
+                            </div>
+                            <div class="tj-contact-form">
+                                <form method="POST" action="">
+                                    {% csrf_token %}
+                                    <div class="row gx-3">
+                                        <div class="col-sm-6">
+                                            <div class="form_group">
+                                                <input type="text" name="fname" id="fname" placeholder="Имя" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form_group">
+                                                <input type="text" name="lname" id="lname" placeholder="Фамилия" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form_group">
+                                                <input type="email" name="email" id="email" placeholder="Почта" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form_group">
+                                                <input type="tel" name="phone" id="phone" placeholder="Телефон номер" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form_group">
+                                                <select name="service" id="service" class="tj-nice-select">
+                                                    <option value="" selected disabled>Выберите услугу</option>
+                                                    <option value="bakend">Backend</option>
+                                                    <option value="front">Frontend</option>
+                                                    <option value="ux/ui">Ux/Ui</option>
+                                                    <option value="app">Android приложения</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form_group">
+                                                <textarea name="message" id="message" placeholder="Сообщение"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form_btn">
+                                                <button type="submit" class="btn tj-btn-primary">Отправить сообщение</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>                                
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-5 offset-lg-1 col-md-5  d-flex flex-wrap align-items-center  order-1 order-md-2">
+                        <div class="contact-info-list">
+                            <ul class="ul-reset">
+                                <li class="d-flex flex-wrap align-items-center position-relative wow fadeInRight"
+                                    data-wow-delay=".4s">
+                                    <div class="icon-box">
+                                        <i class="flaticon-phone-call"></i>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Телефон номер</p>
+                                        <a href="tel:{{infouser.phone_number}}">{{infouser.phone_number}}</a>
+                                    </div>
+                                </li>
+                                <li class="d-flex flex-wrap align-items-center position-relative wow fadeInRight"
+                                    data-wow-delay=".5s">
+                                    <div class="icon-box">
+                                        <i class="flaticon-mail-inbox-app"></i>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Почта</p>
+                                        <a href="mailto:{{infouser.email}}">{{infouser.email}}</a>
+                                    </div>
+                                    <li class="d-flex flex-wrap align-items-center position-relative wow fadeInRight" data-wow-delay=".6s">
+                                        <div class="icon-box">
+                                            <i class="flaticon-location"></i>
+                                        </div>
+                                        <div class="text-box">
+                                            <p>Адрес</p>
+                                            <a href="https://www.google.com/maps/place/IT-%D0%BA%D1%83%D1%80%D1%81%D1%8B+%D0%9A%D1%83%D1%80%D1%81%D1%8B+%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F+%D0%9E%D1%88+Geeks/@40.5193874,72.8027052,20.75z/data=!4m15!1m8!3m7!1s0x38bdac017f5a2e85:0xe0a3c61dc6f47b95!2z0J7RiA!3b1!8m2!3d40.5139985!4d72.8160976!16zL20vMDRyMWg2!3m5!1s0x38bdaf51e4e11011:0x2dd3bbd34364f3e1!8m2!3d40.5193021!4d72.8029789!16s%2Fg%2F11pzyvs7h9?entry=ttu">
+                                                {{infouser.adress}}</a>
+                                        </div>
+                                    </li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        <!-- CONTACT SECTION END -->
+    </main>
+
+    <!-- FOOTER AREA START -->
+    <footer class="tj-footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="footer-logo-box">
+                        <a href="#"><img src="{% static 'img/logo/logo.png' %}" alt=""></a>
+                    </div>
+                    <div class="footer-menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#services-section">Услуги</a></li>
+                                <li><a href="#works-section">Проекты</a></li>
+                                <li><a href="#resume-section">Резюме</a></li>
+                                <li><a href="#skills-section">Навыки</a></li>
+                                <li><a href="#testimonials-section">Отзывы</a></li>
+                                <li><a href="#contact-section">Контакт</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="copy-text">
+                        <p>&copy; 2024 Все права принадлежат<a href="#" target="_blank">Розимухаммаду</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER AREA END -->
+
+
+    <!-- CSS here -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/nice-select.min.js' %}"></script>
+    <script src="{% static 'js/backToTop.js' %}"></script>
+    <script src="{% static 'js/smooth-scroll.js' %}"></script>
+    <script src="{% static 'js/appear.min.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/gsap.min.js' %}"></script>
+    <script src="{% static 'js/one-page-nav.js' %}"></script>
+    <script src="{% static 'js/lightcase.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/odometer.min.js' %}"></script>
+    <script src="{% static 'js/magnific-popup.js' %}"></script>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
